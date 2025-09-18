@@ -1,22 +1,548 @@
-window.labels={'default':'a1f14dc4'};(function(){(function(){var a=0;return function(c){return"jscomp_symbol_"+(c||"")+a++}})();var b=this;function k(a,c){a=a.split(".");c=c||b;for(var d=0;d<a.length;d++)if(c=c[a[d]],null==c)return null;return c}
-function l(a){var c=typeof a;if("object"==c)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return c;var d=Object.prototype.toString.call(a);if("[object Window]"==d)return"object";if("[object Array]"==d||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";if("[object Function]"==d||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";
-else if("function"==c&&"undefined"==typeof a.call)return"object";return c}function q(a,c){var d=Array.prototype.slice.call(arguments,1);return function(){var c=d.slice();c.push.apply(c,arguments);return a.apply(this,c)}}function r(a,c){function d(){}d.prototype=c.prototype;a.superClass_=c.prototype;a.prototype=new d;a.prototype.constructor=a;a.base=function(a,d,g){for(var e=Array(arguments.length-2),f=2;f<arguments.length;f++)e[f-2]=arguments[f];return c.prototype[d].apply(a,e)}};function t(a){if(Error.captureStackTrace)Error.captureStackTrace(this,t);else{var c=Error().stack;c&&(this.stack=c)}a&&(this.message=String(a));this.reportErrorToServer=!0}r(t,Error);t.prototype.name="CustomError";function u(a,c){t.call(this,v(a,c));this.messagePattern=a}r(u,t);u.prototype.name="AssertionError";function v(a,c){a=a.split("%s");for(var d="",f=a.length-1,e=0;e<f;e++)d+=a[e]+(e<c.length?c[e]:"%s");return d+a[f]}function w(a,c,d){if(!a){var f=Array.prototype.slice.call(arguments,2),e="Assertion failed";if(c){e+=": "+c;var g=f}throw new u(""+e,g||[]);}return a}function x(a,c){throw new u("Failure"+(a?": "+a:""),Array.prototype.slice.call(arguments,1));};function z(a){this.tagName_=a}z.prototype.toString=function(){return this.tagName_};new z("A");new z("ABBR");new z("ACRONYM");new z("ADDRESS");new z("APPLET");new z("AREA");new z("ARTICLE");new z("ASIDE");new z("AUDIO");new z("B");new z("BASE");new z("BASEFONT");new z("BDI");new z("BDO");new z("BIG");new z("BLOCKQUOTE");new z("BODY");new z("BR");new z("BUTTON");new z("CANVAS");new z("CAPTION");new z("CENTER");new z("CITE");new z("CODE");new z("COL");new z("COLGROUP");new z("COMMAND");new z("DATA");
-new z("DATALIST");new z("DD");new z("DEL");new z("DETAILS");new z("DFN");new z("DIALOG");new z("DIR");new z("DIV");new z("DL");new z("DT");new z("EM");new z("EMBED");new z("FIELDSET");new z("FIGCAPTION");new z("FIGURE");new z("FONT");new z("FOOTER");new z("FORM");new z("FRAME");new z("FRAMESET");new z("H1");new z("H2");new z("H3");new z("H4");new z("H5");new z("H6");new z("HEAD");new z("HEADER");new z("HGROUP");new z("HR");new z("HTML");new z("I");new z("IFRAME");new z("IMG");new z("INPUT");new z("INS");
-new z("ISINDEX");new z("KBD");new z("KEYGEN");new z("LABEL");new z("LEGEND");new z("LI");new z("LINK");new z("MAIN");new z("MAP");new z("MARK");new z("MATH");new z("MENU");new z("MENUITEM");new z("META");new z("METER");new z("NAV");new z("NOFRAMES");new z("NOSCRIPT");new z("OBJECT");new z("OL");new z("OPTGROUP");new z("OPTION");new z("OUTPUT");new z("P");new z("PARAM");new z("PICTURE");new z("PRE");new z("PROGRESS");new z("Q");new z("RP");new z("RT");new z("RTC");new z("RUBY");new z("S");new z("SAMP");
-new z("SCRIPT");new z("SECTION");new z("SELECT");new z("SMALL");new z("SOURCE");new z("SPAN");new z("STRIKE");new z("STRONG");new z("STYLE");new z("SUB");new z("SUMMARY");new z("SUP");new z("SVG");new z("TABLE");new z("TBODY");new z("TD");new z("TEMPLATE");new z("TEXTAREA");new z("TFOOT");new z("TH");new z("THEAD");new z("TIME");new z("TITLE");new z("TR");new z("TRACK");new z("TT");new z("U");new z("UL");new z("VAR");new z("VIDEO");new z("WBR");function A(){this.stringConstValueWithSecurityContract__googStringSecurityPrivate_="";this.STRING_CONST_TYPE_MARKER__GOOG_STRING_SECURITY_PRIVATE_=B}A.prototype.implementsGoogStringTypedString=!0;A.prototype.getTypedStringValue=function(){return this.stringConstValueWithSecurityContract__googStringSecurityPrivate_};A.prototype.toString=function(){return"Const{"+this.stringConstValueWithSecurityContract__googStringSecurityPrivate_+"}"};var B={};
-(new A).stringConstValueWithSecurityContract__googStringSecurityPrivate_="";function C(){this.privateDoNotAccessOrElseSafeScriptWrappedValue_="";this.SAFE_SCRIPT_TYPE_MARKER_GOOG_HTML_SECURITY_PRIVATE_=D}C.prototype.implementsGoogStringTypedString=!0;var D={};C.prototype.getTypedStringValue=function(){return this.privateDoNotAccessOrElseSafeScriptWrappedValue_};C.prototype.toString=function(){return"SafeScript{"+this.privateDoNotAccessOrElseSafeScriptWrappedValue_+"}"};
-C.prototype.goog_html_SafeScript_prototype$initSecurityPrivateDoNotAccessOrElse_=function(a){this.privateDoNotAccessOrElseSafeScriptWrappedValue_=a;return this};(new C).goog_html_SafeScript_prototype$initSecurityPrivateDoNotAccessOrElse_("");function E(){this.goog_html_SafeUrl$privateDoNotAccessOrElseSafeHtmlWrappedValue_="";this.SAFE_URL_TYPE_MARKER_GOOG_HTML_SECURITY_PRIVATE_=F}E.prototype.implementsGoogStringTypedString=!0;E.prototype.getTypedStringValue=function(){return this.goog_html_SafeUrl$privateDoNotAccessOrElseSafeHtmlWrappedValue_};E.prototype.implementsGoogI18nBidiDirectionalString=!0;E.prototype.getDirection=function(){return 1};
-E.prototype.toString=function(){return"SafeUrl{"+this.goog_html_SafeUrl$privateDoNotAccessOrElseSafeHtmlWrappedValue_+"}"};var G=/^(?:(?:https?|mailto|ftp):|[^:/?#]*(?:[/?#]|$))/i,F={};function H(a){var c=new E;c.goog_html_SafeUrl$privateDoNotAccessOrElseSafeHtmlWrappedValue_=a;return c}H("about:blank");function I(){this.privateDoNotAccessOrElseSafeStyleWrappedValue_="";this.SAFE_STYLE_TYPE_MARKER_GOOG_HTML_SECURITY_PRIVATE_=J}I.prototype.implementsGoogStringTypedString=!0;var J={};I.prototype.getTypedStringValue=function(){return this.privateDoNotAccessOrElseSafeStyleWrappedValue_};I.prototype.toString=function(){return"SafeStyle{"+this.privateDoNotAccessOrElseSafeStyleWrappedValue_+"}"};
-I.prototype.goog_html_SafeStyle_prototype$initSecurityPrivateDoNotAccessOrElse_=function(a){this.privateDoNotAccessOrElseSafeStyleWrappedValue_=a;return this};(new I).goog_html_SafeStyle_prototype$initSecurityPrivateDoNotAccessOrElse_("");function K(){this.privateDoNotAccessOrElseSafeStyleSheetWrappedValue_="";this.SAFE_STYLE_SHEET_TYPE_MARKER_GOOG_HTML_SECURITY_PRIVATE_=L}K.prototype.implementsGoogStringTypedString=!0;var L={};K.prototype.getTypedStringValue=function(){return this.privateDoNotAccessOrElseSafeStyleSheetWrappedValue_};K.prototype.toString=function(){return"SafeStyleSheet{"+this.privateDoNotAccessOrElseSafeStyleSheetWrappedValue_+"}"};
-K.prototype.goog_html_SafeStyleSheet_prototype$initSecurityPrivateDoNotAccessOrElse_=function(a){this.privateDoNotAccessOrElseSafeStyleSheetWrappedValue_=a;return this};(new K).goog_html_SafeStyleSheet_prototype$initSecurityPrivateDoNotAccessOrElse_("");function M(){this.goog_html_SafeHtml$privateDoNotAccessOrElseSafeHtmlWrappedValue_="";this.SAFE_HTML_TYPE_MARKER_GOOG_HTML_SECURITY_PRIVATE_=N;this.dir_=null}M.prototype.implementsGoogI18nBidiDirectionalString=!0;M.prototype.getDirection=function(){return this.dir_};M.prototype.implementsGoogStringTypedString=!0;M.prototype.getTypedStringValue=function(){return this.goog_html_SafeHtml$privateDoNotAccessOrElseSafeHtmlWrappedValue_};
-M.prototype.toString=function(){return"SafeHtml{"+this.goog_html_SafeHtml$privateDoNotAccessOrElseSafeHtmlWrappedValue_+"}"};var N={};M.prototype.goog_html_SafeHtml_prototype$initSecurityPrivateDoNotAccessOrElse_=function(a,c){this.goog_html_SafeHtml$privateDoNotAccessOrElseSafeHtmlWrappedValue_=a;this.dir_=c;return this};(new M).goog_html_SafeHtml_prototype$initSecurityPrivateDoNotAccessOrElse_("<!DOCTYPE html>",0);(new M).goog_html_SafeHtml_prototype$initSecurityPrivateDoNotAccessOrElse_("",0);
-(new M).goog_html_SafeHtml_prototype$initSecurityPrivateDoNotAccessOrElse_("<br>",0);var yt={};b.CLOSURE_UNCOMPILED_DEFINES={BEDROCK_DEV_JS:!0};
-function O(a,c){c=void 0===c?b:c;var d=c.loadParams;c.label=function(a,c){return c?c:a&&a["default"]?a["default"]:"unknown"}(c.labels,d.label_requested);var f=d.scs_path+c.label,e,g=!1,m=[],h=q(P,document,d.is_cobalt,d.csp_nonce,function(){d.use_reset_logic&&n("resetTimeout();")}),n=q(Q,document,d.is_cobalt,d.csp_nonce,m),p=q(R,document);c.resetTimeout=function(){c.clearTimeout(e);g||(e=c.setTimeout(function(){var a="local:///network_failure.html";d.is_cobalt&&(a="h5vcc://network-failure?retry-url="+
-encodeURIComponent(c.location.href.split("#")[0]));c.location.replace(a)},4E4))};d.use_reset_logic&&(c.resetTimeout(),c.applicationLoaded=function(){g=!0;c.clearTimeout(e)});c.initializeOrRedirect=function(d){var e=k("ytcsi.tick",c);e&&e("js_r");(e=k(a.initializerPath))?e(d):c.location="http://www.youtube.com/error?src=404"};d.load_steel_api&&h(f+"/api-compiled.js");var y=a.prodCssOverride||d.tv_css;d.debugjs?(c.CLOSURE_NO_DEPS=!0,y&&p(f+y),h(f+a.debugJsInitializer)):d.devjs||(y&&p(f+y),h(f+(a.prodJsOverride||
-d.tv_binary)));d.load_player&&h(d.player_url);if(p=(p=c.location.search.match(/[?&]longcatId=(\d+)(&|$)/))&&p[1])h("//www.gstatic.com/firebasejs/4.5.1/firebase.js"),h("//longcatserver.appspot.com/jsapi?"+p);c.checkBrokenLabel=function(){if("undefined"==typeof yt&&d.label_requested){var a=c.location,e=c.location.href.replace(/([?&])label=[^&]+&?/,"$1stick=0&");var f=(f=a&&a.ownerDocument)&&(f.defaultView||f.parentWindow)||b;if("undefined"!=typeof f.Location&&"undefined"!=typeof f.Element){f=a&&(a instanceof
-f.Location||!(a instanceof f.Element));var g=typeof a;g="object"==g&&null!=a||"function"==g?a.constructor.displayName||a.constructor.name||Object.prototype.toString.call(a):void 0===a?"undefined":null===a?"null":typeof a;w(f,"Argument is not a Location (or a non-Element mock); got: %s",g)}e instanceof E||e instanceof E||(e=e.implementsGoogStringTypedString?e.getTypedStringValue():String(e),w(G.test(e))||(e="about:invalid#zClosurez"),e=H(e));e instanceof E&&e.constructor===E&&e.SAFE_URL_TYPE_MARKER_GOOG_HTML_SECURITY_PRIVATE_===
-F?e=e.goog_html_SafeUrl$privateDoNotAccessOrElseSafeHtmlWrappedValue_:(x("expected object of type SafeUrl, got '"+e+"' of type "+l(e)),e="type_error:SafeUrl");a.href=e}};n("checkBrokenLabel()");n("initializeOrRedirect('"+f+"');");d.is_cobalt&&(c.onload=function(){for(var a=0,c=m.length;a<c;++a)document.body.appendChild(m[a])})}
-function P(a,c,d,f,e){c?(c=S(a,d),c.setAttribute("src",e),a.body.appendChild(c)):d?a.write('<script src="'+e+'" nonce="'+d+'">\x3c/script>'):a.write('<script src="'+e+'">\x3c/script>');f()}function Q(a,c,d,f,e){c?(a=S(a,d),a.innerHTML=e,f.push(a)):d?a.write('<script nonce="'+d+'">'+e+"\x3c/script>"):a.write("<script>"+e+"\x3c/script>")}function S(a,c){a=a.createElement("script");c&&a.setAttribute("nonce",c);return a}
-function R(a,c){var d=a.createElement("link");d.setAttribute("rel","stylesheet");d.setAttribute("type","text/css");d.setAttribute("href",c);a.head.appendChild(d)};var T=/^\?/,U=/^-?(?:|0|[1-9][0-9]*)(?:\.[0-9]*)?$/;function V(a){if("number"===typeof a)return a;if(a&&"string"===typeof a&&U.test(a))return Number(a);if("string"===typeof a&&""===a.trim())return a;var c=String(a).toLowerCase();return"true"===c||1==a?!0:"false"===c||0==a?!1:a}function W(a){var c={};if(a){a=a.replace(T,"");a=a.split("&");for(var d,f=0,e=a.length;f<e;++f){d=a[f].split("=");var g=d.shift();d=V(d.join("="));d="string"==typeof d?decodeURIComponent(d):d;c[g]=d}}return c}
-function X(a,c,d){d=void 0===d?!1:d;a:{for(f in c){var f=!1;break a}f=!0}if(!f){f=-1==a.indexOf("?")?"?":"&";var e=void 0===d?!1:d;d=[];e=void 0===e?!1:e;e=void 0===e?!1:e;var g={},m;for(m in c){var h=c[m];"undefined"!==typeof h&&null!==h&&(e?g[m]=V(h):""!==h&&(g[m]=V(h||0)))}for(var n in g)d.push(encodeURIComponent(n)+"="+encodeURIComponent(g[n]));a+=f+d.join("&")}return a};(function(a){a=void 0===a?b:a;var c=W(a.location.hash.replace(/#[^?]*\??/,""));if(c.theme&&"cl"!=c.theme){var d=(a.location.search||"")+"&"+(a.location.hash||"").replace(/#[^?]*\??/,"");d=W(d);d=X("/tv",d);a.location.assign(d)}else{if(c=(c=a.h5vcc)&&c.dial&&c.dial.DialNativeServiceHandler)try{d=new c,d.registerCallback(function(c){var d=W(c);d.theme&&"cl"!=d.theme?a.location.assign(X("/tv",d)):a.pendingDialNativeServiceRequest=c}),a.dialNativeServiceHandler=d}catch(f){console.error("Steel Dial Server Creation exception: "+
-f)}d={initializerPath:"yt.tv.initialize"};"Cast Receiver"==a.environment.browser?(d.devJsInitializerModule="yt.tv.cast.initializeChromeless",d.debugJsInitializer="/chromecast-concat-bundle.js"):(d.devJsInitializerModule="yt.tv.initializeKabuki",d.debugJsInitializer="/app-concat-bundle.js");O(d,a)}})();}).call(this);
+window.labels = {
+    'default': 'a1f14dc4'
+};
+(function() {
+    (function() {
+        var a = 0;
+        return function(c) {
+            return "jscomp_symbol_" + (c || "") + a++
+        }
+    }
+    )();
+    var b = this;
+    function k(a, c) {
+        a = a.split(".");
+        c = c || b;
+        for (var d = 0; d < a.length; d++)
+            if (c = c[a[d]],
+            null == c)
+                return null;
+        return c
+    }
+    function l(a) {
+        var c = typeof a;
+        if ("object" == c)
+            if (a) {
+                if (a instanceof Array)
+                    return "array";
+                if (a instanceof Object)
+                    return c;
+                var d = Object.prototype.toString.call(a);
+                if ("[object Window]" == d)
+                    return "object";
+                if ("[object Array]" == d || "number" == typeof a.length && "undefined" != typeof a.splice && "undefined" != typeof a.propertyIsEnumerable && !a.propertyIsEnumerable("splice"))
+                    return "array";
+                if ("[object Function]" == d || "undefined" != typeof a.call && "undefined" != typeof a.propertyIsEnumerable && !a.propertyIsEnumerable("call"))
+                    return "function"
+            } else
+                return "null";
+        else if ("function" == c && "undefined" == typeof a.call)
+            return "object";
+        return c
+    }
+    function q(a, c) {
+        var d = Array.prototype.slice.call(arguments, 1);
+        return function() {
+            var c = d.slice();
+            c.push.apply(c, arguments);
+            return a.apply(this, c)
+        }
+    }
+    function r(a, c) {
+        function d() {}
+        d.prototype = c.prototype;
+        a.superClass_ = c.prototype;
+        a.prototype = new d;
+        a.prototype.constructor = a;
+        a.base = function(a, d, g) {
+            for (var e = Array(arguments.length - 2), f = 2; f < arguments.length; f++)
+                e[f - 2] = arguments[f];
+            return c.prototype[d].apply(a, e)
+        }
+    }
+    ;function t(a) {
+        if (Error.captureStackTrace)
+            Error.captureStackTrace(this, t);
+        else {
+            var c = Error().stack;
+            c && (this.stack = c)
+        }
+        a && (this.message = String(a));
+        this.reportErrorToServer = !0
+    }
+    r(t, Error);
+    t.prototype.name = "CustomError";
+    function u(a, c) {
+        t.call(this, v(a, c));
+        this.messagePattern = a
+    }
+    r(u, t);
+    u.prototype.name = "AssertionError";
+    function v(a, c) {
+        a = a.split("%s");
+        for (var d = "", f = a.length - 1, e = 0; e < f; e++)
+            d += a[e] + (e < c.length ? c[e] : "%s");
+        return d + a[f]
+    }
+    function w(a, c, d) {
+        if (!a) {
+            var f = Array.prototype.slice.call(arguments, 2)
+              , e = "Assertion failed";
+            if (c) {
+                e += ": " + c;
+                var g = f
+            }
+            throw new u("" + e,g || []);
+        }
+        return a
+    }
+    function x(a, c) {
+        throw new u("Failure" + (a ? ": " + a : ""),Array.prototype.slice.call(arguments, 1));
+    }
+    ;function z(a) {
+        this.tagName_ = a
+    }
+    z.prototype.toString = function() {
+        return this.tagName_
+    }
+    ;
+    new z("A");
+    new z("ABBR");
+    new z("ACRONYM");
+    new z("ADDRESS");
+    new z("APPLET");
+    new z("AREA");
+    new z("ARTICLE");
+    new z("ASIDE");
+    new z("AUDIO");
+    new z("B");
+    new z("BASE");
+    new z("BASEFONT");
+    new z("BDI");
+    new z("BDO");
+    new z("BIG");
+    new z("BLOCKQUOTE");
+    new z("BODY");
+    new z("BR");
+    new z("BUTTON");
+    new z("CANVAS");
+    new z("CAPTION");
+    new z("CENTER");
+    new z("CITE");
+    new z("CODE");
+    new z("COL");
+    new z("COLGROUP");
+    new z("COMMAND");
+    new z("DATA");
+    new z("DATALIST");
+    new z("DD");
+    new z("DEL");
+    new z("DETAILS");
+    new z("DFN");
+    new z("DIALOG");
+    new z("DIR");
+    new z("DIV");
+    new z("DL");
+    new z("DT");
+    new z("EM");
+    new z("EMBED");
+    new z("FIELDSET");
+    new z("FIGCAPTION");
+    new z("FIGURE");
+    new z("FONT");
+    new z("FOOTER");
+    new z("FORM");
+    new z("FRAME");
+    new z("FRAMESET");
+    new z("H1");
+    new z("H2");
+    new z("H3");
+    new z("H4");
+    new z("H5");
+    new z("H6");
+    new z("HEAD");
+    new z("HEADER");
+    new z("HGROUP");
+    new z("HR");
+    new z("HTML");
+    new z("I");
+    new z("IFRAME");
+    new z("IMG");
+    new z("INPUT");
+    new z("INS");
+    new z("ISINDEX");
+    new z("KBD");
+    new z("KEYGEN");
+    new z("LABEL");
+    new z("LEGEND");
+    new z("LI");
+    new z("LINK");
+    new z("MAIN");
+    new z("MAP");
+    new z("MARK");
+    new z("MATH");
+    new z("MENU");
+    new z("MENUITEM");
+    new z("META");
+    new z("METER");
+    new z("NAV");
+    new z("NOFRAMES");
+    new z("NOSCRIPT");
+    new z("OBJECT");
+    new z("OL");
+    new z("OPTGROUP");
+    new z("OPTION");
+    new z("OUTPUT");
+    new z("P");
+    new z("PARAM");
+    new z("PICTURE");
+    new z("PRE");
+    new z("PROGRESS");
+    new z("Q");
+    new z("RP");
+    new z("RT");
+    new z("RTC");
+    new z("RUBY");
+    new z("S");
+    new z("SAMP");
+    new z("SCRIPT");
+    new z("SECTION");
+    new z("SELECT");
+    new z("SMALL");
+    new z("SOURCE");
+    new z("SPAN");
+    new z("STRIKE");
+    new z("STRONG");
+    new z("STYLE");
+    new z("SUB");
+    new z("SUMMARY");
+    new z("SUP");
+    new z("SVG");
+    new z("TABLE");
+    new z("TBODY");
+    new z("TD");
+    new z("TEMPLATE");
+    new z("TEXTAREA");
+    new z("TFOOT");
+    new z("TH");
+    new z("THEAD");
+    new z("TIME");
+    new z("TITLE");
+    new z("TR");
+    new z("TRACK");
+    new z("TT");
+    new z("U");
+    new z("UL");
+    new z("VAR");
+    new z("VIDEO");
+    new z("WBR");
+    function A() {
+        this.stringConstValueWithSecurityContract__googStringSecurityPrivate_ = "";
+        this.STRING_CONST_TYPE_MARKER__GOOG_STRING_SECURITY_PRIVATE_ = B
+    }
+    A.prototype.implementsGoogStringTypedString = !0;
+    A.prototype.getTypedStringValue = function() {
+        return this.stringConstValueWithSecurityContract__googStringSecurityPrivate_
+    }
+    ;
+    A.prototype.toString = function() {
+        return "Const{" + this.stringConstValueWithSecurityContract__googStringSecurityPrivate_ + "}"
+    }
+    ;
+    var B = {};
+    (new A).stringConstValueWithSecurityContract__googStringSecurityPrivate_ = "";
+    function C() {
+        this.privateDoNotAccessOrElseSafeScriptWrappedValue_ = "";
+        this.SAFE_SCRIPT_TYPE_MARKER_GOOG_HTML_SECURITY_PRIVATE_ = D
+    }
+    C.prototype.implementsGoogStringTypedString = !0;
+    var D = {};
+    C.prototype.getTypedStringValue = function() {
+        return this.privateDoNotAccessOrElseSafeScriptWrappedValue_
+    }
+    ;
+    C.prototype.toString = function() {
+        return "SafeScript{" + this.privateDoNotAccessOrElseSafeScriptWrappedValue_ + "}"
+    }
+    ;
+    C.prototype.goog_html_SafeScript_prototype$initSecurityPrivateDoNotAccessOrElse_ = function(a) {
+        this.privateDoNotAccessOrElseSafeScriptWrappedValue_ = a;
+        return this
+    }
+    ;
+    (new C).goog_html_SafeScript_prototype$initSecurityPrivateDoNotAccessOrElse_("");
+    function E() {
+        this.goog_html_SafeUrl$privateDoNotAccessOrElseSafeHtmlWrappedValue_ = "";
+        this.SAFE_URL_TYPE_MARKER_GOOG_HTML_SECURITY_PRIVATE_ = F
+    }
+    E.prototype.implementsGoogStringTypedString = !0;
+    E.prototype.getTypedStringValue = function() {
+        return this.goog_html_SafeUrl$privateDoNotAccessOrElseSafeHtmlWrappedValue_
+    }
+    ;
+    E.prototype.implementsGoogI18nBidiDirectionalString = !0;
+    E.prototype.getDirection = function() {
+        return 1
+    }
+    ;
+    E.prototype.toString = function() {
+        return "SafeUrl{" + this.goog_html_SafeUrl$privateDoNotAccessOrElseSafeHtmlWrappedValue_ + "}"
+    }
+    ;
+    var G = /^(?:(?:https?|mailto|ftp):|[^:/?#]*(?:[/?#]|$))/i
+      , F = {};
+    function H(a) {
+        var c = new E;
+        c.goog_html_SafeUrl$privateDoNotAccessOrElseSafeHtmlWrappedValue_ = a;
+        return c
+    }
+    H("about:blank");
+    function I() {
+        this.privateDoNotAccessOrElseSafeStyleWrappedValue_ = "";
+        this.SAFE_STYLE_TYPE_MARKER_GOOG_HTML_SECURITY_PRIVATE_ = J
+    }
+    I.prototype.implementsGoogStringTypedString = !0;
+    var J = {};
+    I.prototype.getTypedStringValue = function() {
+        return this.privateDoNotAccessOrElseSafeStyleWrappedValue_
+    }
+    ;
+    I.prototype.toString = function() {
+        return "SafeStyle{" + this.privateDoNotAccessOrElseSafeStyleWrappedValue_ + "}"
+    }
+    ;
+    I.prototype.goog_html_SafeStyle_prototype$initSecurityPrivateDoNotAccessOrElse_ = function(a) {
+        this.privateDoNotAccessOrElseSafeStyleWrappedValue_ = a;
+        return this
+    }
+    ;
+    (new I).goog_html_SafeStyle_prototype$initSecurityPrivateDoNotAccessOrElse_("");
+    function K() {
+        this.privateDoNotAccessOrElseSafeStyleSheetWrappedValue_ = "";
+        this.SAFE_STYLE_SHEET_TYPE_MARKER_GOOG_HTML_SECURITY_PRIVATE_ = L
+    }
+    K.prototype.implementsGoogStringTypedString = !0;
+    var L = {};
+    K.prototype.getTypedStringValue = function() {
+        return this.privateDoNotAccessOrElseSafeStyleSheetWrappedValue_
+    }
+    ;
+    K.prototype.toString = function() {
+        return "SafeStyleSheet{" + this.privateDoNotAccessOrElseSafeStyleSheetWrappedValue_ + "}"
+    }
+    ;
+    K.prototype.goog_html_SafeStyleSheet_prototype$initSecurityPrivateDoNotAccessOrElse_ = function(a) {
+        this.privateDoNotAccessOrElseSafeStyleSheetWrappedValue_ = a;
+        return this
+    }
+    ;
+    (new K).goog_html_SafeStyleSheet_prototype$initSecurityPrivateDoNotAccessOrElse_("");
+    function M() {
+        this.goog_html_SafeHtml$privateDoNotAccessOrElseSafeHtmlWrappedValue_ = "";
+        this.SAFE_HTML_TYPE_MARKER_GOOG_HTML_SECURITY_PRIVATE_ = N;
+        this.dir_ = null
+    }
+    M.prototype.implementsGoogI18nBidiDirectionalString = !0;
+    M.prototype.getDirection = function() {
+        return this.dir_
+    }
+    ;
+    M.prototype.implementsGoogStringTypedString = !0;
+    M.prototype.getTypedStringValue = function() {
+        return this.goog_html_SafeHtml$privateDoNotAccessOrElseSafeHtmlWrappedValue_
+    }
+    ;
+    M.prototype.toString = function() {
+        return "SafeHtml{" + this.goog_html_SafeHtml$privateDoNotAccessOrElseSafeHtmlWrappedValue_ + "}"
+    }
+    ;
+    var N = {};
+    M.prototype.goog_html_SafeHtml_prototype$initSecurityPrivateDoNotAccessOrElse_ = function(a, c) {
+        this.goog_html_SafeHtml$privateDoNotAccessOrElseSafeHtmlWrappedValue_ = a;
+        this.dir_ = c;
+        return this
+    }
+    ;
+    (new M).goog_html_SafeHtml_prototype$initSecurityPrivateDoNotAccessOrElse_("<!DOCTYPE html>", 0);
+    (new M).goog_html_SafeHtml_prototype$initSecurityPrivateDoNotAccessOrElse_("", 0);
+    (new M).goog_html_SafeHtml_prototype$initSecurityPrivateDoNotAccessOrElse_("<br>", 0);
+    var yt = {};
+    b.CLOSURE_UNCOMPILED_DEFINES = {
+        BEDROCK_DEV_JS: !0
+    };
+    function O(a, c) {
+        c = void 0 === c ? b : c;
+        var d = c.loadParams;
+        c.label = function(a, c) {
+            return c ? c : a && a["default"] ? a["default"] : "unknown"
+        }(c.labels);
+        var f = d.scs_path + c.label, e, g = !1, m = [], h = q(P, document, d.is_cobalt, d.csp_nonce, function() {
+            d.use_reset_logic && n("resetTimeout();")
+        }), n = q(Q, document, d.is_cobalt, d.csp_nonce, m), p = q(R, document);
+        c.resetTimeout = function() {
+            c.clearTimeout(e);
+            g || (e = c.setTimeout(function() {
+                var a = "local:///network_failure.html";
+                d.is_cobalt && (a = "h5vcc://network-failure?retry-url=" + encodeURIComponent(c.location.href.split("#")[0]));
+                c.location.replace(a)
+            }, 4E4))
+        }
+        ;
+        d.use_reset_logic && (c.resetTimeout(),
+        c.applicationLoaded = function() {
+            g = !0;
+            c.clearTimeout(e)
+        }
+        );
+        c.initializeOrRedirect = function(d) {
+            var e = k("ytcsi.tick", c);
+            e && e("js_r");
+            (e = k(a.initializerPath)) ? e(d) : c.location = "http://www.youtube.com/error?src=404"
+        }
+        ;
+        d.load_steel_api && h(f + "/api-compiled.js");
+        var y = a.prodCssOverride || d.tv_css;
+        d.debugjs ? (c.CLOSURE_NO_DEPS = !0,
+        y && p(f + y),
+        h(f + a.debugJsInitializer)) : d.devjs || (y && p(f + y),
+        h(f + (a.prodJsOverride || d.tv_binary)));
+        d.load_player && h(d.player_url);
+        if (p = (p = c.location.search.match(/[?&]longcatId=(\d+)(&|$)/)) && p[1])
+            h("//www.gstatic.com/firebasejs/4.5.1/firebase.js"),
+            h("//longcatserver.appspot.com/jsapi?" + p);
+        c.checkBrokenLabel = function() {
+            if ("undefined" == typeof yt && d.label_requested) {
+                var a = c.location
+                  , e = c.location.href.replace(/([?&])label=[^&]+&?/, "$1stick=0&");
+                var f = (f = a && a.ownerDocument) && (f.defaultView || f.parentWindow) || b;
+                if ("undefined" != typeof f.Location && "undefined" != typeof f.Element) {
+                    f = a && (a instanceof f.Location || !(a instanceof f.Element));
+                    var g = typeof a;
+                    g = "object" == g && null != a || "function" == g ? a.constructor.displayName || a.constructor.name || Object.prototype.toString.call(a) : void 0 === a ? "undefined" : null === a ? "null" : typeof a;
+                    w(f, "Argument is not a Location (or a non-Element mock); got: %s", g)
+                }
+                e instanceof E || e instanceof E || (e = e.implementsGoogStringTypedString ? e.getTypedStringValue() : String(e),
+                w(G.test(e)) || (e = "about:invalid#zClosurez"),
+                e = H(e));
+                e instanceof E && e.constructor === E && e.SAFE_URL_TYPE_MARKER_GOOG_HTML_SECURITY_PRIVATE_ === F ? e = e.goog_html_SafeUrl$privateDoNotAccessOrElseSafeHtmlWrappedValue_ : (x("expected object of type SafeUrl, got '" + e + "' of type " + l(e)),
+                e = "type_error:SafeUrl");
+                a.href = e
+            }
+        }
+        ;
+        n("checkBrokenLabel()");
+        n("initializeOrRedirect('" + f + "');");
+        d.is_cobalt && (c.onload = function() {
+            for (var a = 0, c = m.length; a < c; ++a)
+                document.body.appendChild(m[a])
+        }
+        )
+    }
+    function P(a, c, d, f, e) {
+        c ? (c = S(a, d),
+        c.setAttribute("src", e),
+        a.body.appendChild(c)) : d ? a.write('<script src="' + e + '" nonce="' + d + '">\x3c/script>') : a.write('<script src="' + e + '">\x3c/script>');
+        f()
+    }
+    function Q(a, c, d, f, e) {
+        c ? (a = S(a, d),
+        a.innerHTML = e,
+        f.push(a)) : d ? a.write('<script nonce="' + d + '">' + e + "\x3c/script>") : a.write("<script>" + e + "\x3c/script>")
+    }
+    function S(a, c) {
+        a = a.createElement("script");
+        c && a.setAttribute("nonce", c);
+        return a
+    }
+    function R(a, c) {
+        var d = a.createElement("link");
+        d.setAttribute("rel", "stylesheet");
+        d.setAttribute("type", "text/css");
+        d.setAttribute("href", c);
+        a.head.appendChild(d)
+    }
+    ;var T = /^\?/
+      , U = /^-?(?:|0|[1-9][0-9]*)(?:\.[0-9]*)?$/;
+    function V(a) {
+        if ("number" === typeof a)
+            return a;
+        if (a && "string" === typeof a && U.test(a))
+            return Number(a);
+        if ("string" === typeof a && "" === a.trim())
+            return a;
+        var c = String(a).toLowerCase();
+        return "true" === c || 1 == a ? !0 : "false" === c || 0 == a ? !1 : a
+    }
+    function W(a) {
+        var c = {};
+        if (a) {
+            a = a.replace(T, "");
+            a = a.split("&");
+            for (var d, f = 0, e = a.length; f < e; ++f) {
+                d = a[f].split("=");
+                var g = d.shift();
+                d = V(d.join("="));
+                d = "string" == typeof d ? decodeURIComponent(d) : d;
+                c[g] = d
+            }
+        }
+        return c
+    }
+    function X(a, c, d) {
+        d = void 0 === d ? !1 : d;
+        a: {
+            for (f in c) {
+                var f = !1;
+                break a
+            }
+            f = !0
+        }
+        if (!f) {
+            f = -1 == a.indexOf("?") ? "?" : "&";
+            var e = void 0 === d ? !1 : d;
+            d = [];
+            e = void 0 === e ? !1 : e;
+            e = void 0 === e ? !1 : e;
+            var g = {}, m;
+            for (m in c) {
+                var h = c[m];
+                "undefined" !== typeof h && null !== h && (e ? g[m] = V(h) : "" !== h && (g[m] = V(h || 0)))
+            }
+            for (var n in g)
+                d.push(encodeURIComponent(n) + "=" + encodeURIComponent(g[n]));
+            a += f + d.join("&")
+        }
+        return a
+    }
+    ;(function(a) {
+        a = void 0 === a ? b : a;
+        var c = W(a.location.hash.replace(/#[^?]*\??/, ""));
+        if (c.theme && "cl" != c.theme) {
+            var d = (a.location.search || "") + "&" + (a.location.hash || "").replace(/#[^?]*\??/, "");
+            d = W(d);
+            d = X("/tv", d);
+            a.location.assign(d)
+        } else {
+            if (c = (c = a.h5vcc) && c.dial && c.dial.DialNativeServiceHandler)
+                try {
+                    d = new c,
+                    d.registerCallback(function(c) {
+                        var d = W(c);
+                        d.theme && "cl" != d.theme ? a.location.assign(X("/tv", d)) : a.pendingDialNativeServiceRequest = c
+                    }),
+                    a.dialNativeServiceHandler = d
+                } catch (f) {
+                    console.error("Steel Dial Server Creation exception: " + f)
+                }
+            d = {
+                initializerPath: "yt.tv.initialize"
+            };
+            "Cast Receiver" == a.environment.browser ? (d.devJsInitializerModule = "yt.tv.cast.initializeChromeless",
+            d.debugJsInitializer = "/chromecast-concat-bundle.js") : (d.devJsInitializerModule = "yt.tv.initializeKabuki",
+            d.debugJsInitializer = "/app-concat-bundle.js");
+            O(d, a)
+        }
+    }
+    )();
+}
+).call(this);
